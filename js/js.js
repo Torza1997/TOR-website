@@ -30,16 +30,17 @@ $(document).ready(()=>{
                 if(ids == "skill"){
                     tl.from('.skills.one',{x:"100%" ,ease:Expo.easeInOut},"+=.8")
                       .from('.skills.tree',{x:"-100%" ,ease:Expo.easeInOut},"-=.5")
+                      .from('.skill_content #mySkill',{opacity:0,x:"-10%" ,ease:Expo.easeInOut},"-=.5")
                 }
                 
             }
-        }, 1000);
+        }, 0);
        
     });
 
     /**********gsap start****** */
     let tl = gsap.timeline({defaults:{duration:1}});
-    tl.to('.nav li',{visibility:"hidden",opacity:0})
+    tl./*to('.nav li',{visibility:"hidden",opacity:0})
     .from('.home_star #hello',{ opacity:0 ,x:-100 ,ease:Expo.easeInOut})
     .from('.home_star #myname',{opacity:0 ,x:-100 ,ease:Expo.easeInOut})
     .to('.home_star',{left:"-100%" ,ease:Expo.easeInOut},"+=1")
@@ -51,7 +52,7 @@ $(document).ready(()=>{
     .from('.home_content3 h3',{opacity:0 ,x: 100 ,ease:Expo.easeInOut},"-=.8")
     .from('.ellipse-container',{opacity:0,ease:Expo.easeInOut},"-=.6")
     .to('.nav li',{visibility:"visible",opacity:1},"+=.8")
-    .add(Set_animate_text());
+    .*/add(Set_animate_text());
 })
 /************set animate *******/
 function Set_animate_text() {

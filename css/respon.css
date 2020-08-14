@@ -206,9 +206,6 @@
     .about_c1 .content_ab .content h1{
         font-size: 1.5rem;
     }
-    .about_c1 .content_ab .content .text span{
-        font-size: 1rem;
-    }
 }
 @media only screen and (max-width: 452px){
     .main #home .home_content h1{
@@ -252,6 +249,9 @@
     .skill_content  .skill-text h5{
         font-size: 0.7rem;
     }
+    .slide.skill .skill_content:nth-of-type(2) h1{
+        font-size: 4rem;
+    }
 }
 @media only screen and (max-width: 394px){
     .main #home .home_content h1{
@@ -261,13 +261,15 @@
         font-size: 1rem;
     }
 }
-
 @media only screen and (max-width: 344px){
     .main #home  h1{
         font-size: .9rem;
     }
     .main #home  h3{
         font-size: .8rem;
+    }
+    .slide.skill .skill_content:nth-of-type(2) h1{
+        font-size: 3rem;
     }
 }
 

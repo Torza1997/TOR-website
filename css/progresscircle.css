@@ -22,7 +22,7 @@
   stroke-width: 2;
   stroke-linecap: square;
   fill: none;
-  animation: circle-chart-fill 2s reverse; /* 1 */ 
+  animation: circle-chart-fill 4s reverse; /* 1 */ 
   transform: rotate(-90deg); /* 2, 3 */
   transform-origin: center; /* 4 */
 }
@@ -48,7 +48,7 @@
 }
 
 .circle-chart__info {
-  animation: circle-chart-appear 2s forwards;
+  animation: circle-chart-appear 4s forwards;
   opacity: 1;
   transform: translateY(0);
 }
