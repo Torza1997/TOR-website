@@ -121,6 +121,7 @@
         justify-content: start;
     }
     .slide.skill .skill_content:nth-of-type(2){
+        height: 400px;
         animation: height_skill 1s ease-in-out;
     }
 }
