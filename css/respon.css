@@ -121,7 +121,7 @@
         justify-content: start;
     }
     .slide.skill .skill_content:nth-of-type(2){
-        animation: height_skill 1s ease-in-out;
+        animation: scale-img-skill 1s;
     }
 }
 @media only screen and (max-width: 926px){
