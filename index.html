@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/progresscircle.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/progresscircle.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li ><a href="#" id = "home" >home</a></li>
+            <li ><a href="#" id = "about" >about</a></li>
+            <li ><a href="#" id = "skill">skill</a></li>
+            <li ><a href="#" id = "project">project</a></li>
+            <li ><a href="#" id = "galley">galley</a></li>
+            <li ><a href="#" id = "contrack">contrack</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="slide home" id = "home">
+           <!--<div class="home_star">
+                <h1 id = "hello">hello everyone</h1><br>
+                <h2 id = "myname">Wellcome to my website</h2>
+            </div>-->
+            <div class="ellipse-container">
+                <div class="center-ellip">
+                    <div class="ellipse thin"></div>
+                    <div class="ellipse thick"></div>
+                    <div class="ellipse yellow"></div>
+                    <div class="ellipse thick2"></div>
+                    <div class="ellipse yellow2"></div>
+                </div>
+            </div>
+            <div class="home_content">
+                <h1>atsada karanet</h1>
+                <h2>i'm Web developer </h2>
+            </div>
+
+        <div class="sec">
+            <div class="home_content3">
+                <h3>my nickname </h3>
+                <h1>tor ต้อ </h1>
+            </div>
+            <div class="home_content2">
+                <h1>
+                     i'm Graduate 
+                    <br> Computer Engineer 
+                </h1>
+                <h3> 
+                    from  kasetsart university 
+                    <br> sakon nakhon
+                </h3>
+            </div>
+        </div>
+        </div>
+
+        <div class="slide about" id = "about">
+                <div class="about_c1">
+                    <div class="content_ab">
+                        <div class="content">
+                            <div class="text one">
+                                    <h1>ระดับปริญญาตรี(<span>2004-2010</span>)</h1>
+                                    <p>
+                                        ระดับปริญญาตรี
+                                        ศึกษาที่: มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร<br>
+                                        สาขา: วิศวกรรมคอมพิวเตอร์<br>
+                                        สถานะการศึกษา: จบการศึกษา
+                                    </p>
+                                </div>
+                            <div class="text two">
+                                <h1>ระดับมัธยมศึกษา(<span>2010-2016</span>)</h1>
+                                <p>ศึกษาที่: โรงเรียนเลิงนกทา อ.เลิงนกทา จ.ยโสธร</p>
+                            </div>
+                            <div class="text tree">
+                                <h1>ระดับประถมศึกษา(<span>2016-2020</span>)</h1>
+                                <p>ศึกษาที่: โรงเรียนบ้านกุดคอก่านโคกสำราญ ต.โคกสำราญ อ.เลิงนกทา จ.ยโสธร</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow">
+                    <div class="about_c2">
+                        <h1>About>me</h1>
+                    </div>
+                </div>
+        </div>
+        <div class="slide skill" id = "skill">
+            <div class="flip">
+                <div class="skill_content">
+                    <div class="skills one">
+                         <div class="circle">
+                            <div class="circlechart" data-percentage="60">javascript</div>
+                         </div>
+                        <div class="skill-text"><h5><span>basic</span><br>ajax/json/dom<br>/jquery ,js es6</h5></div>
+                    </div>
+                    <div class="skills one">
+                        <div class="circle">
+                            <div class="circlechart" data-percentage="60">css/html</div>
+                        </div>
+                        <div class="skill-text"><h5><span>basic</span><br>layout/animate<br>/grid/bootstrap</h5></div>
+                    </div>
+                    <div class="skills one">
+                        <div class="circle"><div class="circlechart" data-percentage="20">Django</div></div>
+                        <div class="skill-text"><h5><span>basic</span><br>create app/create website</h5></div>
+                    </div>
+                    <div class="skills one">
+                        <div class="circle"><div class="circlechart" data-percentage="30">docker</div></div>
+                        <div class="skill-text"><h5><span>basic</span><br>create website up to docker</h5></div>
+                    </div>
+                </div>
+                <div class="skill_content"></div>
+                <div class="skill_content ">
+                    <div class="skills tree">
+                        <div class="skill-text"><h5><span>basic</span><br>props/state<br>/event/api</h5></div>
+                        <div class="circle"><div class="circlechart" data-percentage="30">react</div></div>
+                    </div>
+                    <div class="skills tree">
+                        <div class="skill-text"><h5><span>basic</span><br>connect database <br> create website</h5></div>
+                        <div class="circle"><div class="circlechart" data-percentage="40">php</div></div>
+                    </div>
+                    <div class="skills tree">
+                        <div class="skill-text"><h5><span>basic</span><br>general</h5></div>
+                        <div class="circle"><div class="circlechart" data-percentage="50">Arduino</div></div>
+                    </div>
+                    <div class="skills tree">
+                        <div class="skill-text"><h5><span>basic</span><br>general/openCv<br>/image processing<br>/pygame</h5></div>
+                        <div class="circle"><div class="circlechart" data-percentage="90">python</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide project" id = "project">
+                <h1>project</h1>
+        </div>
+        <div class="slide galley" id = "galley">
+                <h1>galley</h1>
+        </div>
+        <div class="slide contrack" id = "contrack">
+                <h1>contrack</h1>
+        </div>
+    </div>
+
+<script src="js/js.js"></script>   
+</body>
+</html>

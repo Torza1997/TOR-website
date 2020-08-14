@@ -1,0 +1,272 @@
+/**********height*************/
+@media only screen and (max-height: 900px){
+    .nav{
+        height: 100vh;
+        overflow-y: scroll;
+          
+    }
+    .nav ul li{
+        font-size: 1.2rem;
+        margin: 35px 0;
+    }
+}
+@media only screen and (max-height: 740px){
+    .nav ul li{
+        font-size: 1rem;
+        margin: 30px 0;
+    }
+}
+@media only screen and (max-height: 536px){
+    .nav ul li{
+        font-size: 0.8rem;
+        margin: 23px 0;
+    }
+    .main{
+        overflow: hidden;
+    }
+}
+@media only screen and (max-height: 411px){
+    body{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows:  minmax(50px,auto) auto;
+    }
+    .nav{
+        height: 50px;
+        border-right: 0;
+    }
+    .nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .nav ul li{
+        margin: 0 10px;
+        transform: rotate(0deg);
+    }
+}
+/**********width*************/
+@media only screen and (max-width: 1500px){
+    .main #home .home_content{
+        left: -150px;
+    }
+}
+@media only screen and (max-width: 1355px){
+    .home_star{
+        text-align: center;
+    }
+    .slide.home .home_star  #hello{
+        font-size: 2.7rem;
+        margin: 10px 0;
+    }
+    .slide.home .home_star #myname{
+        font-size: 1.7rem;
+    }
+
+
+    
+}
+@media only screen and (max-width: 1200px){
+    .main #home .home_content{
+        left: -200px;
+    }
+    .main #home .home_content2{
+        top: 75%;
+    }
+    .ellipse-container{
+        width: 550px;
+        height: 550px;
+    }
+    .main #home .home_content2{
+        top: 75%;
+        left: 60%;
+    }
+    .main #home .home_content3{
+        top: 20%;
+        left: 68%;
+    }
+}
+@media only screen and (max-width: 1026px){
+    .main #home .home_content{
+        left: -120px;
+        top: 43%;
+    }
+    .main #home .home_content h1{
+        font-size: 3rem;
+    }
+    .main #home .home_content h2{
+        font-size: 2rem;
+    }
+    .main #home  h1{
+        font-size: 1.5rem;
+    }
+    .main #home  h3{
+        font-size: 1rem;
+    }
+    .main #home .home_content2{
+        top: 80%;
+        left: 60%;
+    }
+    .main #home .home_content3{
+        top: 18%;
+        left: 68%;
+    }
+@media only screen and (max-width: 962px){
+    .main #skill .flip{
+        flex-direction: column;
+        
+    }
+    .main #skill .skill_content{
+        justify-content: start;
+    }
+    .slide.skill .skill_content:nth-of-type(2){
+        animation: height_skill 1s ease-in-out;
+    }
+}
+@media only screen and (max-width: 926px){
+   
+    .ellipse-container{
+        width: 380px;
+        height: 380px;
+    }
+    .ellipse.thin{
+        width: 100%;
+        height: 100%;
+        top: 1.5%;
+        left: 1.5%;
+    }
+    .ellipse.thick2{
+        top: 12%;
+        left: 12%;
+    }
+    .ellipse.yellow2{
+        top: 12%;
+        left: 12%;
+    }
+    .main #home  h1{
+        font-size: 1.2rem;
+    }
+    .main #home  h2{
+        font-size: .8rem;
+    }
+    .about_c1 .content_ab .content{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .main #home .home_content{
+        position: absolute;
+        transform: rotate(0deg);
+        width: 100%;
+        top: 10%;
+        left: 0px;
+    }
+    .main .slide.home .sec{
+        display: flex;
+        flex-direction: row;
+        top: 37%;
+        position: relative;
+        width: 100%;
+        height: 20%;
+    }
+    .main #home .home_content2{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        left: 0;
+        top:0;
+        margin-right: 20px;
+    }
+    .main #home .home_content3{
+        left: 0;
+        position: relative;
+        width: 50%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 664px){
+    .main #home .home_content h1{
+        font-size: 2rem;
+    }
+    .main #home .home_content h2{
+        font-size: 1rem;
+    }
+    .about_c1 .content_ab .content{
+        height: 95%;
+        top:2.5%;
+        
+    }
+    .about_c1 .content_ab .content h1{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 544px){
+    .about_c1 .content_ab .content h1{
+        font-size: 1.5rem;
+    }
+    .about_c1 .content_ab .content .text span{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 452px){
+    .main #home .home_content h1{
+        font-size: 1.5rem;
+    }
+    .main #home .home_content h2{
+        font-size: 1rem;
+    }
+    .main #home  h1{
+        font-size: 1rem;
+    }
+    .main #home  h3{
+        font-size: .8rem;
+    }
+    .ellipse-container{
+        width: 250px;
+        height: 250px;
+        left:45%;
+    }
+    .ellipse.thin{
+        top: 4.5%;
+        left: 4.5%;
+    }
+    .ellipse.thick2{
+        top: 14.5%;
+        left: 14.5%;
+    }
+    .ellipse.yellow2{
+        top: 14.5%;
+        left: 14.5%;
+    }
+    .about_c1 .content_ab .content{
+        width: 95%;
+        height: 95%;
+        left: 0%;
+        top:2%;
+    }
+    .about_c1 .content_ab .content h1{
+        font-size: 1.2rem;
+    }
+    .skill_content  .skill-text h5{
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width: 394px){
+    .main #home .home_content h1{
+        font-size: 1.5rem;
+    }
+    .main #home .home_content h2{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 344px){
+    .main #home  h1{
+        font-size: .9rem;
+    }
+    .main #home  h3{
+        font-size: .8rem;
+    }
+}
+

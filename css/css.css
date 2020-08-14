@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Kanit', sans-serif;
+    
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+body{
+    display: grid;
+    grid-template-columns: minmax(50px,5%) auto;
+    background: #FFB200;
+}
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #dadada;
+    text-transform: uppercase;
+
+    overflow: hidden;
+   /*
+    overflow-y: scroll;
+    overflow-x: hidden;
+    */
+
+}
+.main .slide{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    width: 100%;
+}
+.main #about , #skill
+,#project,#galley
+,#contrack,#home{
+    height: 100%;
+}
+.main #galley{
+    flex-direction: column;
+}
+.main .slide.active{
+    display: flex;
+} 
+/*******************************/
+.nav{  
+    position: relative;
+    height: 100%;
+    text-transform: uppercase;
+    z-index: 1;
+    background: #FFB200;
+
+    /*
+    border-right: 4px solid #ffffff;
+    box-shadow: 5px 0px 10px 5px #b9b9b9;
+    */
+}
+.nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.nav ul li{
+    font-size: 1.5rem;
+    transform: rotate(270deg);
+    margin: 50px 0 ;
+    
+}
+.nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 50px;
+}
+.nav ul li a.active_{
+    background-color: black;
+    color: #FFB200;
+    border-radius: 5px;
+}
+.nav ul li a:hover{
+    background-color: black;
+    color: #FFB200;
+    border-radius: 5px;
+    transition: .5s ;
+}
+/********home1**************/
+.main #home{
+    background-image: url("../img/bg_2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.main #home .home_content{
+    position: absolute;
+    text-align: center;
+    transform: rotate(-90deg);
+    top: 38%;
+    left: -50px;
+    color: #fff;
+   
+}
+.main #home .home_content h1{
+    font-size: 4.5rem;
+    display: inline-block;
+    transition: 1s;
+}
+.main #home .home_content h2{
+    color: #FFB200;
+    font-size: 3rem;
+    transition: 1s;
+}
+/************home 2 ******************/
+.main #home .home_content2{
+    position: absolute;
+    text-align: center;
+    left: 70%;
+    top: 67%;
+}
+.main #home .home_content2 h1 {
+    color: #fff;
+    transition: 1s;
+}
+.main #home .home_content2 h3 {
+    color: #FFB200;
+    transition: 1s; 
+}
+/************home 3 ******************/
+.main #home .home_content3{
+    position: absolute;
+    text-align: center;
+    left: 77%;
+    top: 15%;   
+}
+.main #home .home_content3 h1{
+    color: #fff;
+    transition: 1s;
+}
+.main #home .home_content3 h3 {
+    color: #FFB200;
+    transition: 1s;
+}
+
+/*****************ellipse********************/
+.ellipse-container{ 
+    width: 608px;
+    height:608px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: 1s;
+}
+.ellipse{
+    position: absolute;
+    top:0;
+    border-radius: 50%;
+    border-style: solid;
+}
+.ellipse.thin{
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-color: #494949;
+    opacity: .5;
+}
+.ellipse.thick{
+    width: 93%;
+    height: 93%;
+    border-width: 4px;
+    border-color: #fff;
+    transform: rotate(-45deg);
+    top: 20px;
+    left: 20px;
+}
+.ellipse.yellow{
+    width: 93%;
+    height: 93%;
+    border-width: 4px;
+    border-color: #FFB200 transparent;
+    transform: rotate(-45deg);
+    top: 20px;
+    left: 20px;
+    animation: ellipRotate 3s ease-in-out infinite;
+}
+.ellipse.thick2{
+    width: 80%;
+    height: 80%;
+    border-width: 10px;
+    border-color: #fff;
+    transform: rotate(-45deg);
+    top: 10%;
+    left: 10%;
+}
+.ellipse.yellow2{
+    width: 80%;
+    height: 80%;
+    border-width: 10px;
+    border-color: #FFB200 transparent;
+    transform: rotate(-45deg);
+    top: 10%;
+    left: 10%;
+    animation: ellipRotate2  5s ease-in-out infinite;
+}
+.main .home_star{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#FFB200 ;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main #home .home_star h1{
+    font-size: 4.5rem;
+}
+.main #home .home_star h2{
+    font-size: 3rem;
+    color: #fff;
+}
+/*****************about****************/
+.main .slide.about,.skill,.project,.galley,.contrack{
+    transition: 1s;
+}
+.main .slide.about{
+    background:#FFB200;
+}
+.main .slide.about .about_c1,.about_c2,.shadow{
+  width: 100%;
+  height: 100%;
+  
+}
+.main .slide.about .shadow{
+    filter: drop-shadow(-5px -5px 10px  rgba(0, 0, 0, 0.5));
+}
+.main .slide.about .about_c2{
+    position: relative;
+    float: right;
+    background-image: url("../img/bg_5.png");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(75% 0, 100% 0, 100% 100%, 0 100%);
+    animation: width-animate 1s ease-in-out;
+    
+}
+
+.main .slide.about .shadow .about_c2 h1{
+    position: fixed;
+    overflow: hidden;
+    top: 74%;
+    right:-95px;
+    color: #FFF;
+    font-size: 3rem;
+    transform: rotate(90deg);  
+   /* animation: opacity-about  3s ease-in-out;*/
+   
+   
+}
+.main .slide.about .about_c1 .content_ab{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    filter: drop-shadow(-5px -5px 10px  rgba(0, 0, 0, 0.5));
+}
+.about_c1 .content_ab .content{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 60%;
+    height: 70%;
+    border-left: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    transition: 1s;
+    border-radius: 0 20px 20px 0;
+}
+.about_c1 .content_ab .content h1{
+    font-size: 1.9rem;
+}
+.about_c1 .content_ab .content .text{
+    width: 100%;
+    height: 100%;
+    margin: 2px 0;
+    background: linear-gradient(90deg,#fc0193,#f59404);
+    padding: 25px;
+    border-radius: 0 20px 20px 0;
+    /**animation: left-animete 1s ease-in-out;*/
+}
+.about_c1 .content_ab .content .text span{
+    color: #FFF;
+    font-size: 1.5rem;
+}
+/*******************skill********************/
+.main #skill .flip{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+    
+}
+.main #skill .skill_content{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    overflow-y: scroll;
+}
+ .slide.skill .skill_content:nth-of-type(1){
+     position: relative;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(90deg,#f59404, #01dffc);
+   
+ }
+ .slide.skill .skill_content:nth-of-type(2){
+     position: relative;
+     background-image: url("../img/bg_10.jpg");
+     background-size: cover;
+     background-position: center;
+     width: 100%;
+     height: 100%;
+     filter: drop-shadow(-5px -5px 10px  rgba(0, 0, 0, 0.5));
+     animation: tran-width-center 1s ease-in-out;
+     float: center;
+ }
+ .slide.skill .skill_content:nth-of-type(3){
+    position: relative;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(-90deg,#FFB200, #fc01e7);
+     
+ }
+ .skills{
+     width: 90%;
+     height: 100%;
+     margin: 10px;
+ 
+ }
+ /*********progess-skill*****/
+ .skill_content .skills{
+     display: flex;
+     border-radius: 20px;
+     
+
+ }
+ .skills .skill-text{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border: 5px solid  #dbdbdb ;
+    border-radius: 20px;
+    fill:none;
+    
+    
+ }
+ .skill_content  .skill-text h5{
+     width: 100%;
+     padding: 10px;
+     font-weight: 10px;
+     text-transform: capitalize;
+    
+ }
+ .skill_content  .skill-text span{
+    color: #FFF;
+ }
+ .skill_content .skills.one .skill-text{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+ }
+ .skill_content .skills.tree .skill-text{
+    text-align: center;
+    display: flex;
+    align-items: center;
+   
+ }
+ .skills .circle{
+    position: relative;
+     width: 50%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ /****************************/
+
+ 
