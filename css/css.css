@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+:root{
+    
+}
 *{
     margin: 0;
     padding: 0;
@@ -411,6 +414,83 @@ body{
      justify-content: center;
      align-items: center;
  }
- /****************************/
 
+
+  /*************project***************/
+  .slide.project{
+      background:black;
+      flex-wrap: wrap;
+      overflow:scroll;
+      transition: 1s;
+     
+  }
+  .slide.project .link{
+        height: 250px;
+        width: 250px;
+        background: linear-gradient(90deg,#FFB200, #fc0176);
+        margin: 20px;
+        border-radius: 10px;
+        animation: left-skill 1s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+.slide.project .link i{
+    font-size: 10rem;
+    color: #000;
+
+}
+.slide.project .link.django img{
+    width: 100%;
+    height: 100%;
+    padding:40px
+}
+  .slide.project .link:hover{
+      transform: scale(1.3);
+      transition: .5s;
+  }
+  .slide.project .head-text{
+        position: absolute;
+        top:120px;
+        font-size: 3rem;
+        color: #FFF;
+        text-shadow:1px 1px 1px #91919191,
+            1px 2px 1px #91919191,
+            1px 3px 1px #91919191,
+            1px 4px 1px #91919191,
+            1px 5px 1px #91919191,
+            1px 6px 1px #91919191,
+            1px 7px 1px #91919191,
+            1px 8px 1px #91919191,
+            1px 9px 1px #91919191,
+            1px 10px 1px #91919191; 
+        animation: right-skill 1s ease-in-out;
+  }
+ /**************slide galley***************/
+.slide.galley {
+    background:black;
+    color: #FFF;
+    overflow: scroll;
+}
+ .slide.galley .tests{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+    grid-gap: 10px;
+    
+ }
+ .slide.galley .tests .test5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size:200%;
+ }
+ .slide.galley .tests img{
+     width: 100%;
+     height: 100%;
+ }
  
