@@ -505,6 +505,7 @@ body{
  }
  .slide.contrack .absolute_{
     display: flex;
+    flex-direction: column;
  }
  .slide.contrack .icons{
     width: 200px;
@@ -515,6 +516,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
     filter: url(#goo);
     animation: left-skill 1s ease-in-out;
     
