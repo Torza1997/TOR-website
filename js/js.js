@@ -13,6 +13,10 @@ $(document).ready(()=>{
              nav[i].classList.remove("active_");
         }
     }
+
+    $(".galley img").on("click",(e)=>{
+        window.location.href = e.target.src;
+    });
     $('.nav').on('click',(ev)=>{
         let ids = ev.target.id;
         setTimeout(() => {
@@ -34,26 +38,28 @@ $(document).ready(()=>{
                 }
                 
             }
-        }, 0 /*delay change page*/);
+        },0 /*delay change page*/);
        
     });
+    
+})
 
-    /**********gsap start****** */
-    let tl = gsap.timeline({defaults:{duration:1}});
-    tl/*.to('.nav li',{visibility:"hidden",opacity:0})
-    .from('.home_star #hello',{ opacity:0 ,x:-100 ,ease:Expo.easeInOut})
-    .from('.home_star #myname',{opacity:0 ,x:-100 ,ease:Expo.easeInOut})
-    .to('.home_star',{left:"-100%" ,ease:Expo.easeInOut},"+=1")
+/**********gsap start****** */
+     let tl = gsap.timeline({defaults:{duration:1}});
+     tl.to('.nav li',{visibility:"hidden",opacity:0})/*
+    .from('.home_star #hello',{ opacity:0 ,x:-100 ,ease:Expo.easeInOut},"-=.8")
+    .from('.home_star #myname',{opacity:0 ,x:-100 ,ease:Expo.easeInOut},"-=.8")
+    .to('.home_star',{left:"-100%" ,ease:Expo.easeInOut},"-=.8")
     .from('.home_content h1',{opacity:0 ,x:-100 ,ease:Expo.easeInOut},"-=.8")
     .from('.home_content h2',{opacity:0 ,x: 100 ,ease:Expo.easeInOut},"-=.8")
     .from('.home_content2 h1',{opacity:0 ,x:-100 ,ease:Expo.easeInOut},"-=.8")
     .from('.home_content2 h3',{opacity:0 ,x: 100 ,ease:Expo.easeInOut},"-=.8")
     .from('.home_content3 h1',{opacity:0 ,x:-100 ,ease:Expo.easeInOut},"-=.8")
     .from('.home_content3 h3',{opacity:0 ,x: 100 ,ease:Expo.easeInOut},"-=.8")
-    .from('.ellipse-container',{opacity:0,ease:Expo.easeInOut},"-=.6")
-    .to('.nav li',{visibility:"visible",opacity:1},"+=.8")
-    */.add(Set_animate_text());
-})
+    .from('.ellipse-container',{opacity:0,ease:Expo.easeInOut},"-=.6")*/
+    .to('.nav li',{visibility:"visible",opacity:1})
+    .add(Set_animate_text());
+
 /************set animate *******/
 function Set_animate_text() {
     document.querySelector(".home_content h1").style.animation=".5s left-animete ease-in-out";

@@ -28,7 +28,7 @@
 
     <div class="main">
         <div class="slide home" id = "home">
-           <!--<div class="home_star">
+            <!--<div class="home_star">
                 <h1 id = "hello">hello everyone</h1><br>
                 <h2 id = "myname">Wellcome to my website</h2>
             </div>-->
@@ -160,23 +160,55 @@
                 <div class="head-text"><h1>Link my project</h1></div>
           </div> 
         <div class="slide galley" id = "galley">
-            <div class="tests">
-                <div class="test1"><img src="img/bg_1.jpg" ></div>
-                <div class="test2"><img src="img/bg_2.jpg" ></div>
-                <div class="test3"><img src="img/bg_3.jpg" ></div>
-                <div class="test4"><img src="img/bg_4.jpg" ></div>
-                <div class="test5"><h1>galley</h1></div>
-                <div class="test6"><img src="img/bg_9.jpg" ></div>
-                <div class="test7"><img src="img/bg_6.jpg" ></div>
-                <div class="test8"><img src="img/bg_7.jpg" ></div>
-                <div class="test9"><img src="img/bg_8.jpg" ></div>
+            <div class="imgs_">
+                <div class="img_1"><img src="img/bg_1.jpg" id="img_1" ></div>
+                <div class="img_2"><img src="img/bg_2.jpg" ></div>
+                <div class="img_3"><img src="img/bg_3.jpg" ></div>
+                <div class="img_4"><img src="img/bg_4.jpg" ></div>
+                <div class="img_5"><h1>galley</h1></div>
+                <div class="img_6"><img src="img/bg_9.jpg" ></div>
+                <div class="img_7"><img src="img/bg_6.jpg" ></div>
+                <div class="img_8"><img src="img/bg_7.jpg" ></div>
+                <div class="img_9"><img src="img/bg_8.jpg" ></div>
             </div>
         </div>
         <div class="slide contrack" id = "contrack">
-                <h1>contrack</h1>
+            <div class="absolute_">
+                <a href="https://www.facebook.com/T.Tor.Thanatos"><div class="icons">
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                    <i class="fab fa-facebook"></i>
+                </div></a>
+                <a href="https://www.instagram.com/t.tor.thanatos"><div class="icons">
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                    <i class="fab fa-instagram"></i>
+                </div></a>
+                <a href="http://line.me/ti/p/~torza1997"><div class="icons">
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                    <i class="fab fa-line"></i>
+                </div></a>
+            </div>
         </div>
     </div>
-
+    <svg id ="hidden_">
+        <defs>
+         <filter id='goo'>
+          <feGaussianBlur in='SourceGraphic' 
+          stdDeviation='20' result='name'/>
+           <feColorMatrix in='name' mode='matrix'
+               values='1 0 0 0 0
+                       0 1 0 0 0 
+                       0 0 1 0 0
+                       0 0 0 30 -15 ' result='aab'/>
+           <feBlend in='SourceGraphic' in2='aab'/>
+          </filter>
+        </defs>
+       </svg>
 <script src="js/js.js"></script>   
 </body>
 </html>

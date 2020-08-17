@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 :root{
-    
+    --text-shadow:1px 1px 1px #91919191,
+    1px 2px 1px #91919191,
+    1px 3px 1px #91919191,
+    1px 4px 1px #91919191,
+    1px 5px 1px #91919191,
+    1px 6px 1px #91919191,
+    1px 7px 1px #91919191,
+    1px 8px 1px #91919191,
+    1px 9px 1px #91919191,
+    1px 10px 1px #91919191; 
 }
 *{
     margin: 0;
@@ -24,7 +33,6 @@ body{
     height: 100vh;
     background: #dadada;
     text-transform: uppercase;
-
     overflow: hidden;
    /*
     overflow-y: scroll;
@@ -454,17 +462,8 @@ body{
         top:120px;
         font-size: 3rem;
         color: #FFF;
-        text-shadow:1px 1px 1px #91919191,
-            1px 2px 1px #91919191,
-            1px 3px 1px #91919191,
-            1px 4px 1px #91919191,
-            1px 5px 1px #91919191,
-            1px 6px 1px #91919191,
-            1px 7px 1px #91919191,
-            1px 8px 1px #91919191,
-            1px 9px 1px #91919191,
-            1px 10px 1px #91919191; 
-        animation: right-skill 1s ease-in-out;
+        text-shadow:var(--text-shadow);
+        animation: left-skill 1s ease-in-out;
   }
  /**************slide galley***************/
 .slide.galley {
@@ -472,25 +471,79 @@ body{
     color: #FFF;
     overflow: scroll;
 }
- .slide.galley .tests{
+ .slide.galley .imgs_{
     width: 90%;
     height: 90%;
     display: grid;
     grid-template-columns:repeat(3,1fr);
     grid-template-rows:repeat(3,1fr);
     grid-gap: 10px;
-    
+    animation: left-skill 1s ease-in-out;
  }
- .slide.galley .tests .test5{
+ .slide.galley .imgs_ .img_5{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     font-size:200%;
+    text-shadow:var(--text-shadow);
  }
- .slide.galley .tests img{
+ .slide.galley .imgs_ img{
      width: 100%;
      height: 100%;
+     z-index: 1;
  }
+ /****************contrack*******************/
+ .slide.contrack{
+    background:#FFB200;
  
+ }
+ .slide.contrack a{
+     text-decoration:none;
+     color: #000;
+ }
+ .slide.contrack .absolute_{
+    display: flex;
+ }
+ .slide.contrack .icons{
+    width: 200px;
+    height: 200px;
+    background:black;
+    margin: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: url(#goo);
+    animation: left-skill 1s ease-in-out;
+    
+}
+.slide.contrack .icons .icon{
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   background:black;
+   border-radius: 50%;
+   transition: 1.5s cubic-bezier(0,2,.61,-0.05);
+   
+}.slide.contrack .icons i{
+    font-size: 9rem;
+    z-index: 10;
+    color: #FFF;
+}
+.slide.contrack .icons:hover > .icon:nth-child(1){
+    transform:translate(50px,130px);
+ 
+ }
+ .slide.contrack .icons:hover > .icon:nth-child(2){
+    transform:translate(150px,-90px);
+ 
+ }
+ .slide.contrack .icons:hover > .icon:nth-child(3){
+    transform:translate(-130px,-50px);
+ 
+ }
+#hidden_{
+    display: none;
+}
