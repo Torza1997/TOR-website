@@ -65,6 +65,7 @@ body{
     text-transform: uppercase;
     z-index: 1;
     background: #FFB200;
+    cursor: pointer;
 
     /*
     border-right: 4px solid #ffffff;
